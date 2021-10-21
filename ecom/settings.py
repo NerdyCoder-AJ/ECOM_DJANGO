@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'api',
     'api.category',
     'api.product',
+    'api.user',
 ]
 
 MIDDLEWARE = [
@@ -110,6 +111,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+AUTH_USER_MODEL = "user.CustomUser"
 
 CROSS_ORIGIN_ALLOW_ALL = True
 
